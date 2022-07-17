@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Edu QLD Beginner', cursive;
     color: #fff;
 }
 
@@ -12,6 +11,7 @@ body{
     background: black;
     height: 100vh;
     position: relative;
+    font-family: 'Edu QLD Beginner', cursive;
 }
 
 ::-webkit-scrollbar{
