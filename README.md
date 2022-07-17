@@ -7,12 +7,18 @@ Esse é o meu portifólio, feito para mostrar um pouco sobre mim, minhas expêri
 </p>
 
 ## 📱 Layout para Celular
+<br>
+<p align='center'>
+<img width='300' height='600' src='/imgs-videos-demo/gifmobile.gif'>
+</p>
 
 ## 💻 Layout para Web
 <br>
 <p align='center'>
-<img width='400' src=''>
+<img width='700' src='/imgs-videos-demo/gifdesktop.gif'>
 </p>
+
+<br>
 ## 🧑‍💻 Tecnologias utilizadas
 <br>
 
