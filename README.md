@@ -1,6 +1,6 @@
 ## 🔗 Sobre o Projeto
 
-https://sunnyside-paginaresponsiva.netlify.app/
+link
 
 <p>
 Esse é o meu portifólio, feito para mostrar um pouco sobre mim, minhas expêriencias, conhecimentos e projetos. 
