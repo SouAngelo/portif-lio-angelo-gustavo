@@ -1,0 +1,219 @@
+@media (max-width: 830px){
+     
+    /* menu e menu-hamb */ 
+
+ 
+
+    .navbar{
+        padding: 20px 8px 20px 20px;
+        align-items: center;
+    }
+
+    .menu{
+        flex-direction: column;
+        transition: .3s ease;
+        position: absolute;
+        top: 60px;
+        right: -20rem;
+        background: linear-gradient(95deg, rgb(2, 2, 92), rgb(89, 4, 122));
+        height: 100vh;
+        width: 200px;
+        align-items: center;
+        padding: 100px 0;
+        transition: all .5s;
+        box-shadow: 10px 20px 20px 15px blue;
+        
+    }
+
+    .menu h2{
+        margin-bottom: 100px;
+        font-size: 30px;
+        display: block;
+    }
+
+    .menu a{
+        border: none;
+        font-size: 22px;
+        border-bottom: 1px solid black;
+        border-radius: 0;
+    }
+
+    .menu li{
+        margin-bottom: 25px;
+    }
+
+    .menu a:hover{
+        background: none;
+        color: rgb(167, 167, 167);
+    }
+
+    .navbar h1{
+     font-size: 10px;
+    }
+
+    .btn{
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+        right: 0;
+    }
+
+  /* #check:checked ~ ul {
+      right: 0;
+  } */
+
+  #nav.active #menu {
+      right: 0;
+  }
+
+
+
+
+    /* cv */
+    .cv{
+        justify-items: center;
+       /* padding-left: 140px; */
+    }
+
+    .content-cv{
+        
+        width: 150%;
+       
+    }
+   
+    .cv .img img{
+       display: none;
+   }
+
+/* sobre mim */
+    
+   .text{
+       width: 100%;
+   }    
+
+   .img{
+       display: none;
+   }
+
+   .projetos{
+       grid-template-columns: repeat(1, 1fr);
+       padding: 0 0;
+       
+   }
+
+   .sobre-mim{
+       padding: 10px 0;
+   }
+   
+   .text p{
+       font-size: 20px;
+   }
+ 
+   .img-eren{
+       display: none;
+   }
+  
+}
+
+@media (max-width: 765px){
+
+    .cv{
+        padding: 0 15px;
+    }
+    .content-cv{
+        width: 1000px;
+       
+    }
+}
+
+@media (max-width: 698px){
+    .text-contato p {
+       text-align: center;
+    }
+
+    .contato{
+        padding: 0 20px;
+    }
+
+    .redes-sociais{
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 521px){
+    /* cv */
+
+    .content-cv h2{
+        font-size: 1.6rem;
+    }
+
+    .content-cv p{
+        font-size: 14px;
+    }
+
+    .content-cv span{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 418px){
+
+   
+    
+      .projetos{
+          padding: 0 10px;
+      }
+      .projeto-container{
+          width: 100%;
+          height: 420px;
+          margin-bottom: 15px;
+          margin-top: 20px;
+      }
+
+      .image-projeto{
+          height: 230px; 
+      }
+
+      .text-projeto{
+          height: 180px;
+         
+       }
+
+    
+
+      /* habilidades */
+
+      .boxTech{
+          width: 80%;
+      }
+
+      .boxTech p{
+          font-size: 15px;
+      }
+
+      /* portifolio */
+
+    .projeto-container h1{
+        font-size: 22px;
+    }
+
+    .info-projeto{
+        font-size: 15px;
+    }
+
+    .tech-usadas{
+        font-size: 13px;
+        margin-bottom: 25px;
+    }
+    
+    .text-projeto a{
+        font-size: 13px;
+    }
+
+}
+
+@media (max-width: 329px){
+    .content-cv .typing{
+        font-size: 1.7rem;
+    }
+}

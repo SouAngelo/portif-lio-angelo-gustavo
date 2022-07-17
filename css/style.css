@@ -1,0 +1,869 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Anton&family=Barlow:ital,wght@0,900;1,400&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,900&family=Josefin+Sans:wght@300&family=Lato:ital@0;1&family=League+Spartan:wght@500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&family=Roboto:wght@900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Edu QLD Beginner', cursive;
+    color: #fff;
+}
+
+body{
+    background: black;
+    height: 100vh;
+    position: relative;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(3, 3, 88);
+    border-radius: 20px;
+}
+#check {
+    display: none;
+}
+ 
+.btn{
+    display: none;
+}
+
+.navbar h2{
+    display: none;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    height: 60px;
+    position: fixed;
+    background-color: #000;
+    align-items: center;
+    z-index: 5;
+  
+}
+
+.navbar h1{
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color: #fff;
+    font-size: 0.7rem;
+    font-family: 'Edu QLD Beginner', cursive;
+}
+
+.navbar span{
+    color: blue;
+    animation: mov 3s infinite;
+    opacity: 1;
+    transition: 1s;
+}
+
+@keyframes mov{
+    0%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li{
+    list-style: none;
+}
+
+.menu a{
+    text-decoration: none;
+    margin-right: 20px;
+    color: #fff;
+    padding: 7px 15px;
+    font-size: 13px;
+    transition: all 1s;
+    position: relative;
+}
+
+.menu a::after{
+    content: ' ';
+    position: absolute;
+    background-color: #4231db;
+    width: 0%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.menu a:hover::after{
+    width: 100%;
+}
+
+.menu a:hover{
+    color: #4231db;
+}
+
+/* cv */
+
+.cv{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 70vh;
+    background: url(/img/fundo\ azul.jpg) no-repeat center center/cover;
+    position: relative;
+    background-attachment: fixed;
+    
+}
+
+.cv::before{
+    content: '';
+    background-color: rgba(0, 0, 0, 0.9);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+    
+}
+
+.img{
+    width: 270px;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.img img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.content-cv{
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    align-items: center;
+    width: 50%;
+}
+
+.content-cv h2{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: rgb(141, 140, 140);
+    
+}
+
+.content-cv .typing{
+    margin-bottom: 15px;
+    position: relative;
+    color: blue;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.dev{
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(141, 140, 140);
+}
+
+.content-cv .typing::before{
+  content: '|';
+  position: absolute;
+  right: 0;
+  margin-right: -15px;
+  animation: pisca 1s infinite;
+  opacity: 1;
+  color: #fff;
+}
+
+@keyframes pisca{
+    0%{
+        opacity: 1;
+    }
+
+    50%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+.btns{
+    display: flex;
+}
+
+.btns button{
+    width: 120px;
+    border-radius: 10px;
+    background-color: transparent;
+    padding: 10px 15px;
+    cursor: pointer;
+    border: 1px solid rgb(0, 136, 248);
+    margin-left: 10px;
+    margin-top: 0px;
+    transition: .5s;
+    z-index: 1;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: cores 5s forwards;
+    
+}
+.btns button:hover{
+    box-shadow: inset 10px -10px 20px rgb(4, 4, 148);
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+
+@keyframes cores{
+    0%{
+        border: 1px solid rgb(248, 9, 168);
+        transition: 1s;
+       
+    }
+
+    50%{
+        border: 1px solid rgb(155, 6, 201);
+        transition: 1s;
+       
+    }
+
+    100%{
+        border: 1px solid rgb(65, 13, 185);
+        transition: 1s;
+       
+    }
+}
+
+button a{
+  text-decoration: none;
+  font-size: 13px;
+  font-family: 'Josefin Sans', sans-serif;
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+
+
+
+/* sobre mim */
+
+.sobre-mim{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.text-img{
+    padding: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.content-sobre-mim h1{
+    font-size: 2rem;
+    font-family: 'Edu QLD Beginner', cursive;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.img-eren{
+    width: 250px;
+}
+
+.img-eren img{
+    width: 100%;
+}
+
+.text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text p{
+    font-size: 16px;
+    text-align:justify;
+    font-family: 'Edu QLD Beginner', cursive;
+    margin-bottom: 50px;
+}
+
+.text span{
+    color: blue;
+}
+
+.curriculo-btn{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: 0.2s;
+    border-radius: 10px;
+    width: 150px;
+    height: 35px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #03e9f4;
+    font-size: 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.curriculo-btn:hover{
+    background: #03e9f4;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
+    color: #fff;
+}
+
+.curriculo-btn span{
+    position: absolute;
+    display: block;
+}
+
+.curriculo-btn span:nth-child(1) {
+    top: 0;  
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: btn-anim1 1s linear infinite;
+  }
+  
+   
+  
+  @keyframes btn-anim1 {
+  
+    0% {
+  
+      left: -100%;
+  
+    }
+  
+    50%,100% {
+  
+      left: 100%;
+  
+    }
+  
+  }
+
+  .curriculo-btn span:nth-child(2) {
+
+    top: -100%;
+  
+    right: 0;
+  
+    width: 2px;
+  
+    height: 100%;
+  
+    background: linear-gradient(180deg, transparent, #03e9f4);
+  
+    animation: btn-anim2 1s linear infinite;
+  
+    animation-delay: .25s
+  
+  }
+    
+  @keyframes btn-anim2 {
+  
+    0% {
+  
+      top: -100%;
+  
+    }
+  
+    50%,100% {
+  
+      top: 100%;
+  
+    }
+  
+  }
+
+  .curriculo-btn span:nth-child(3) {
+
+    bottom: 0;
+  
+    right: -100%;
+  
+    width: 100%;
+  
+    height: 2px;
+  
+    background: linear-gradient(270deg, transparent, #03e9f4);
+  
+    animation: btn-anim3 1s linear infinite;
+  
+    animation-delay: .5s
+  
+  }
+  
+  @keyframes btn-anim3 {
+  
+    0% {
+  
+      right: -100%;
+  
+    }
+  
+    50%,100% {
+  
+      right: 100%;
+  
+    }
+  
+  }
+
+  .curriculo-btn span:nth-child(4) {
+
+    bottom: -100%;
+  
+    left: 0;
+  
+    width: 2px;
+  
+    height: 100%;
+  
+    background: linear-gradient(360deg, transparent, #03e9f4);
+  
+    animation: btn-anim4 1s linear infinite;
+  
+    animation-delay: .75s
+  
+  }
+  
+  @keyframes btn-anim4 {
+  
+    0% {
+  
+      bottom: -100%;
+  
+    }
+  
+    50%,100% {
+  
+      bottom: 100%;
+  
+    }
+  
+  }
+
+
+/*  Habilidades */
+
+.conhecimentos{
+    margin-top: 4rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(/img/imgdev.jpg) no-repeat center center/cover;
+    position: relative;
+    background-attachment: fixed;
+}
+.conhecimentos::before{
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+   
+}
+
+.conhecimentos h2{
+    font-family: 'Edu QLD Beginner', cursive;
+    margin-bottom: 15px;
+    font-size: 2rem;
+    letter-spacing: 3px;
+    z-index: 1;
+    margin-top: 15px;
+}
+.tecnologias{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 15px 0;
+    z-index: 1;
+}
+
+.boxTech{
+    width: 200px;
+    height: 150px;
+    border: 1px solid #fff;
+    margin: 15px 5px;
+    padding: 10px 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px 10px rgb(80, 80, 202);
+}
+
+.boxTech h1{
+    font-family: 'Edu QLD Beginner', cursive;
+    font-size: 20px;
+}
+
+.boxTech p{
+    font-size: 10px;
+    font-family: 'Edu QLD Beginner', cursive;
+   
+}
+
+.one h1{
+    margin-bottom: 18px;
+   
+}
+
+.two h1{
+    margin-bottom: 10px;
+}
+
+.three h1{
+    margin-bottom: 10px;
+}
+
+.for h1{
+    margin-bottom: 11px;
+    display: flex;
+    justify-content: center;
+}
+
+.five h1{
+    margin-bottom: 20px;
+}
+
+.boxTech i{
+    padding-right: 5px;
+}
+
+.boxTech img{
+    padding-right: 5px;
+}
+
+/* Portifólio */
+
+.hide{
+    display: none;
+}
+.hide2{
+    display: none;
+}
+.hide3{
+    display: none;
+}
+
+#verMais{
+    margin-bottom: 30px;
+    width: 120px;
+    border-radius: 10px;
+    background-color: transparent;
+    padding: 10px 15px;
+    cursor: pointer;
+    border: 1px solid rgb(0, 136, 248);
+    margin-left: 10px;
+    margin-top: 0px;
+    transition: .5s;
+    z-index: 1;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#verMais:hover{
+    box-shadow: inset 10px -10px 20px rgb(4, 4, 148);
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.vermais-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.portifolio{
+    width: 100%;
+    height: 100%;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(/img/fundo\ azul.jpg) no-repeat center center/cover;
+    position: relative;
+}
+
+.portifolio::before{
+    content: '';
+    background-color: rgba(0, 0, 0, 0.9);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+}
+
+.portifolio h2{
+    margin-top: 15px;
+    font-size: 20px;
+    font-family: 'Edu QLD Beginner', cursive;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    z-index: 1;
+    
+}
+
+.projetos{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    grid-gap: 25px 15px;
+    padding: 15px 90px;
+    z-index: 1;
+}
+
+.projeto-container{
+    width: 350px;
+    height: 350px;
+
+}
+
+.projeto-container h1{
+    font-weight: 400;
+    font-family: 'Edu QLD Beginner', cursive;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.text-projeto{
+    padding: 10px 0;
+    
+}
+
+.info-projeto{
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.tech-usadas{
+    font-size: 12px;
+    color: rgb(168, 0, 50);
+    margin-bottom: 13px;
+}
+
+.text-projeto a{
+    text-decoration: none;
+    border: 1px solid rgb(168, 0, 50);
+    padding: 7px 10px;
+    font-size: 10px;
+    border-radius: 5px;
+}
+
+.text-projeto a:hover{
+    box-shadow: inset 5px -10px 20px rgb(168, 0, 50);
+}
+
+.text-projeto i{
+    margin-right: 5px;
+}
+
+.projeto-container img{
+    width: 100%;
+    height: 100%;
+    transition: all .4s;
+}
+
+.image-projeto {
+    background-color: rgb(185, 164, 164);
+    border-left: 4px solid rgb(168, 0, 50);
+    height: 150px;
+}
+
+/* seta */
+
+  #seta{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
+      margin-bottom: 85px;
+      
+  }
+
+  #seta p{
+      margin: 30px 0 0 0;
+      font-family: 'Splash', cursive;
+      animation: topo 3s infinite;
+
+  }
+
+  @keyframes topo{
+      0%{
+          color: rgb(2, 154, 255);
+      }
+
+      50%{
+          color: rgb(241, 3, 3);
+      }
+
+      100%{
+          color: rgb(77, 253, 23);
+      }
+  }
+
+  #seta i{
+      font-size: 20px;
+      margin: 10px 0 30px 0;
+      border: 1px solid #ddd;
+      padding: 8px 10px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: .5s;
+      opacity: 1;
+      animation: setinha 2s infinite;
+  }
+
+  @keyframes setinha {
+      0%{
+          opacity: 0;
+          
+      }
+
+      50%{
+          opacity: 1;
+          margin-top: -1px;
+         
+      }
+
+      100%{
+          opacity: 0;
+          
+      }
+  }
+
+  #topoBtn{
+      background-color: transparent;
+      border: none;
+      margin-top: 15px;
+      position: absolute;
+      top: 50px;
+      
+  }
+
+  #seta i:hover{
+      background-color: rgba(62, 74, 136, 0.5);
+  }
+
+/* contato */
+.contato{
+    border-top: 1px solid rgb(117, 117, 117);
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.text-contato{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.text-contato h3{
+    font-size: 25px;
+    letter-spacing: 5px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.text-contato i{
+    font-size: 18px;
+    color: rgb(2, 247, 2);
+}
+
+.text-contato p{
+    border: 2px solid rgb(0, 136, 248);
+    padding: 5px 15px;
+    border-radius: 10px;
+    animation: piscaLuz 3s infinite;
+    transition: 1s;
+    margin-bottom: 45px;
+}
+
+@keyframes piscaLuz{
+    0%{
+        background-color: transparent;
+    }
+
+    50%{
+        background-color: rgb(12, 1, 165);
+    }
+
+    100%{
+        background-color: transparent;
+    }
+}
+
+.redes-sociais{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 55px;
+    margin-bottom: 15px;
+}
+
+.redes-sociais i{
+    font-size: 22px;
+    color: rgb(25, 25, 218);
+    border-radius: 50%;
+}
+
+.redes-sociais i:hover{
+    box-shadow: 5px 5px 20px 10px blue;
+   
+}
+
+.conclusao p{
+    margin-top: 10px;
+   font-size: 14px;
+   margin-bottom: 10px;
+}
