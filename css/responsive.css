@@ -58,9 +58,6 @@
         right: 0;
     }
 
-  /* #check:checked ~ ul {
-      right: 0;
-  } */
 
   #nav.active #menu {
       right: 0;
@@ -72,7 +69,7 @@
     /* cv */
     .cv{
         justify-items: center;
-       /* padding-left: 140px; */
+       
     }
 
     .content-cv{
@@ -116,6 +113,10 @@
 }
 
 @media (max-width: 765px){
+
+    body, html{
+        font-family: 'Edu QLD Beginner', cursive;
+    }
 
     .cv{
         padding: 0 15px;
