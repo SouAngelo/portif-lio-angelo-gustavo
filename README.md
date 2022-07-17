@@ -9,8 +9,10 @@ Esse é o meu portifólio, feito para mostrar um pouco sobre mim, minhas expêri
 ## 📱 Layout para Celular
 
 ## 💻 Layout para Web
-
-
+<br>
+<p align='center'>
+<img width='400' src=''>
+</p>
 ## 🧑‍💻 Tecnologias utilizadas
 <br>
 
