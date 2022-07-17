@@ -1,6 +1,6 @@
 ## 🔗 Sobre o Projeto
 
-[link](https://angelogustavo-portifolio.netlify.app/)
+(https://angelogustavo-portifolio.netlify.app/)
 
 <p>
 Esse é o meu portifólio, feito para mostrar um pouco sobre mim, minhas expêriencias, conhecimentos e projetos. 
