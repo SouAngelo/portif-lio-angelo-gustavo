@@ -1,6 +1,5 @@
 ## 🔗 Sobre o Projeto
 
-Link do site: https://angelogustavo-portifolio.netlify.app/
 
 <p>
 Esse é o meu portifólio, feito para mostrar um pouco sobre mim, minhas expêriencias, conhecimentos e projetos. 
